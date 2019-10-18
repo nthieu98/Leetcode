@@ -22,7 +22,7 @@ class Solution:
     if u.right != None:
       self.DFS(u.right, v * 2 + 1, f + 1)
     
-  def widthOfBinaryTree(self, root: TreeNode) -> int:
+  def widthOfBinaryTree(self, root: tTreeNode) -> int:
     for i in range(100000):
       self.d[i] = -1
     self.DFS(root, 1, 0)
